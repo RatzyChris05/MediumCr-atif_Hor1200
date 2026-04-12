@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verre — Cycle de vie &amp; impacts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
+    <ul class="nav-links">
+      <li><a href="plastique.html" class="nav-plastic">Plastique</a></li>
+      <li><a href="verre.html" class="nav-glass active">Verre</a></li>
+      <li><a href="aluminium.html" class="nav-alu">Aluminium</a></li>
+      <li><a href="comparaison.html">Comparaison</a></li>
+      <li><a href="ocean.html">Impact marin</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <header class="page-header glass">
+    <div class="formula">SiO₂ — Dioxyde de silicium</div>
+    <h1>Verre</h1>
+    <p class="origin">Matière première : silice (sable), calcaire (CaCO₃), soude (Na₂CO₃)</p>
+  </header>
+
+  <!-- TABS -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="ressources">Ressources naturelles</button>
+          <button class="tab-btn" data-tab="fabrication">Cycle de vie</button>
+          <button class="tab-btn" data-tab="ocean">Devenir dans les océans</button>
+          <button class="tab-btn" data-tab="recyclage">Recyclage &amp; consigne</button>
+        </div>
+
+        <!-- ONGLET 1 — RESSOURCES -->
+        <div class="tab-pane active" data-tab="ressources">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">7,6 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml</div>
+              <div class="stat-source">Source : Stefanini et al., 2020</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">~550 g</div>
+              <div class="stat-label">CO₂ équivalent émis à la production</div>
+              <div class="stat-source">Source : CIRAIG / RECYC-QUÉBEC, 2015</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">1 550°C</div>
+              <div class="stat-label">Température de fusion du verre</div>
+              <div class="stat-source">Source : données industrielles</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">~300 g</div>
+              <div class="stat-label">Poids d'une bouteille en verre 500 ml (15× le PET)</div>
+              <div class="stat-source">Source : CIRAIG, 2015</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">Composition du verre</h3>
+            <p>
+              Le verre est fabriqué à partir de matières premières minérales abondantes :
+              <strong>silice (SiO₂) à 72%</strong>, <strong>calcaire (CaCO₃) à 13%</strong>
+              et <strong>soude (Na₂CO₃) à 14%</strong>. Ces matériaux doivent être fondus ensemble
+              à plus de <strong>1 550°C</strong>, ce qui explique sa forte consommation énergétique.
+            </p>
+            <p style="margin-top:1rem;">
+              L'ajout de <strong>calcin</strong> (verre recyclé broyé) permet de réduire la température
+              de fusion et donc de diminuer l'énergie consommée : chaque 10% de calcin ajouté réduit
+              la consommation énergétique de 25%. Avec 100% de calcin, on peut réduire les émissions
+              de CO₂ de près de 50%.
+            </p>
+            <p style="margin-top:1rem;">
+              La principale limite du verre est son <strong>poids élevé</strong> (~300 g vs ~20 g pour le PET),
+              qui augmente considérablement les émissions liées au transport.
+            </p>
+          </div>
+        </div>
+
+        <!-- ONGLET 2 — CYCLE DE VIE -->
+        <div class="tab-pane" data-tab="fabrication">
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛏️</div>
+              <div class="timeline-content">
+                <h3>1. Extraction des matières premières
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  Extraction de sable siliceux, de calcaire et de soude — ressources minérales
+                  non renouvelables à l'échelle humaine, mais abondantes. L'extraction minière
+                  a des impacts locaux sur les écosystèmes (carrières).
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🔥</div>
+              <div class="timeline-content">
+                <h3>2. Fusion &amp; fabrication
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  Fusion à 1 550°C dans des fours industriels au gaz ou électriques.
+                  Formage par soufflage (bouteille) ou pressage. Énergie requise : <strong>7,6 MJ</strong>
+                  par bouteille 500 ml — plus du double du PET.
+                  Émissions de CO₂ : <strong>~550 g CO₂eq</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚛</div>
+              <div class="timeline-content">
+                <h3>3. Transport &amp; distribution
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  Le verre est <strong>15× plus lourd</strong> que le PET pour le même volume.
+                  Cela multiplie l'empreinte carbone du transport et réduit la rentabilité
+                  des circuits d'approvisionnement longue distance.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🥂</div>
+              <div class="timeline-content">
+                <h3>4. Utilisation
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  Le verre est inerte chimiquement — il ne migre aucune substance dans le contenu.
+                  En système de consigne, une même bouteille peut être réutilisée
+                  <strong>15 à 25 fois</strong> avant d'être recyclée.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">📦</div>
+              <div class="timeline-content">
+                <h3>5. Collecte &amp; tri
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  Le verre doit être trié par couleur (blanc, vert, brun) pour préserver
+                  la qualité du calcin. La contamination par d'autres couleurs dégrade
+                  le verre recyclé. Le taux de collecte varie selon les pays.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>6. Recyclage
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  Le verre est recyclable à <strong>100%</strong> et à l'infini sans perte de qualité.
+                  La teneur en calcin dans les nouvelles bouteilles est d'environ <strong>52%</strong>
+                  dans les pays dotés de bonnes infrastructures. L'énergie économisée est significative.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>7. Résidu final — milieu marin
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  Le verre non récupéré coule et s'érode en "sea glass" sur les fonds marins.
+                  Il ne libère pas de substances toxiques, mais persiste pendant des millénaires.
+                  Son impact sur la faune marine est mécanique (blessures) plutôt que chimique.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 3 — OCÉANS -->
+        <div class="tab-pane" data-tab="ocean">
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <h3 style="margin-bottom:1rem;">Le verre dans les océans</h3>
+            <p>
+              Contrairement au plastique, le verre ne se fragmente pas en particules chimiquement
+              dangereuses. Il <strong>coule</strong> (densité ~2,5 g/cm³) et s'érode lentement
+              par abrasion sur les fonds sablonneux, formant du "sea glass" aux arêtes arrondies.
+            </p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#3A7D44;"></div>
+                <div class="deg-time">Jour 1</div>
+                <div class="deg-desc">La bouteille coule rapidement (densité 2,5 g/cm³)</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–10 ans</div>
+                <div class="deg-desc">Abrasion des arêtes sur les fonds marins, formation du "sea glass"</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">100–500 ans</div>
+                <div class="deg-desc">Érosion progressive des fragments, accumulation sur les fonds</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">500–4 000 ans</div>
+                <div class="deg-desc">Dissolution très lente en milieu aqueux (pH dépendant)</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#1a5c2a;"></div>
+                <div class="deg-time">~4 000 ans</div>
+                <div class="deg-desc">Dissolution complète — aucune toxicité chimique libérée</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2.5rem auto 0;">
+            <div class="editorial">
+              <h3>Avantage relatif du verre en milieu marin</h3>
+              <p>
+                Le verre, bien que persistant très longtemps, ne génère pas de microplastiques
+                ni de substances chimiques dangereuses. Son principal risque en milieu marin
+                est mécanique : les fragments peuvent blesser la faune marine et les baigneurs.
+                Il ne s'accumule pas dans la chaîne alimentaire comme le font les microplastiques.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 4 — RECYCLAGE & CONSIGNE -->
+        <div class="tab-pane" data-tab="recyclage">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Recyclable à l'infini sans perte de qualité</div>
+              <div class="stat-source">Source : CIRAIG / RECYC-QUÉBEC, 2015</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">52%</div>
+              <div class="stat-label">Contenu en calcin (verre recyclé) dans les nouvelles bouteilles</div>
+              <div class="stat-source">Source : CIRAIG, 2015</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">25%</div>
+              <div class="stat-label">Économie d'énergie par tranche de 10% de calcin ajouté</div>
+              <div class="stat-source">Source : Stefanini et al., 2020</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">15–25×</div>
+              <div class="stat-label">Réutilisations possibles en système de consigne</div>
+              <div class="stat-source">Source : RECYC-QUÉBEC</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">Le système de consigne : meilleure option pour le verre</h3>
+            <p>
+              La <strong>consigne</strong> permet de récupérer les bouteilles en verre, de les laver
+              et de les réutiliser directement — sans refusion. C'est de loin l'option la plus économe
+              en énergie et en ressources. Une bouteille consignée réutilisée 20 fois a une empreinte
+              carbone <strong>3 à 5× inférieure</strong> à une bouteille non consignée recyclée.
+            </p>
+            <p style="margin-top:1rem;">
+              Le Québec a introduit en 2023 un système de consigne élargi incluant les bouteilles
+              de vin et de spiritueux. Ce système, bien rodé dans des pays comme l'Allemagne
+              (taux de retour >98%), représente le modèle de gestion le plus efficace pour le verre.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Pages</h3>
+        <a href="index.html">Accueil</a>
+        <a href="plastique.html">Plastique PET</a>
+        <a href="aluminium.html">Aluminium</a>
+        <a href="comparaison.html">Comparaison</a>
+        <a href="ocean.html">Impact marin</a>
+        <a href="solutions.html">Solutions &amp; Sources</a>
+      </div>
+      <div>
+        <h3>Sources — Verre</h3>
+        <a href="#" style="pointer-events:none;">Stefanini et al., 2020</a>
+        <a href="https://www.recyc-quebec.gouv.qc.ca" target="_blank" rel="noopener">CIRAIG / RECYC-QUÉBEC, 2015</a>
+      </div>
+      <div>
+        <h3>Voir aussi</h3>
+        <a href="comparaison.html">Comparer les 3 matériaux</a>
+        <a href="ocean.html">Impact sur les océans</a>
+        <a href="solutions.html">Solutions</a>
+      </div>
+      <div class="footer-enquete">
+        Question d'enquête : "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </div>
+      <div class="footer-copy">HOR-1200 — Sciences de l'environnement — 2026.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

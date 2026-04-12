@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluminium — Cycle de vie &amp; impacts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
+    <ul class="nav-links">
+      <li><a href="plastique.html" class="nav-plastic">Plastique</a></li>
+      <li><a href="verre.html" class="nav-glass">Verre</a></li>
+      <li><a href="aluminium.html" class="nav-alu active">Aluminium</a></li>
+      <li><a href="comparaison.html">Comparaison</a></li>
+      <li><a href="ocean.html">Impact marin</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <header class="page-header alu">
+    <div class="formula">Al — Aluminium (n° 13)</div>
+    <h1>Aluminium</h1>
+    <p class="origin">Matière première : bauxite — Guinée, Brésil, Australie, Inde</p>
+  </header>
+
+  <!-- TABS -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="ressources">Ressources naturelles</button>
+          <button class="tab-btn" data-tab="fabrication">Cycle de vie</button>
+          <button class="tab-btn" data-tab="ocean">Devenir dans les océans</button>
+          <button class="tab-btn" data-tab="recyclage">Recyclage</button>
+        </div>
+
+        <!-- ONGLET 1 — RESSOURCES -->
+        <div class="tab-pane active" data-tab="ressources">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">~14 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml (aluminium vierge)</div>
+              <div class="stat-source">Source : Rizzo et al., 2021</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">~600 g</div>
+              <div class="stat-label">CO₂ équivalent émis à la production (vierge)</div>
+              <div class="stat-source">Source : Di et al., 2022</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">4–5 kg</div>
+              <div class="stat-label">De bauxite requis pour produire 1 kg d'aluminium</div>
+              <div class="stat-source">Source : Rizzo et al., 2021</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">15 kWh</div>
+              <div class="stat-label">Énergie électrique par kg d'aluminium (électrolyse)</div>
+              <div class="stat-source">Source : Di et al., 2022</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">Du minerai à la bouteille</h3>
+            <p>
+              L'aluminium est obtenu à partir de la <strong>bauxite</strong>, un minerai riche en
+              oxyde d'aluminium (Al₂O₃). Le processus de transformation comporte deux étapes majeures :
+            </p>
+            <ul style="margin:1rem 0 1rem 1.5rem; list-style:disc; display:flex; flex-direction:column; gap:0.5rem;">
+              <li>
+                <strong>Procédé Bayer</strong> : extraction de l'alumine (Al₂O₃) à partir de la bauxite
+                par attaque à la soude caustique sous pression.
+              </li>
+              <li>
+                <strong>Électrolyse Hall-Héroult</strong> : réduction de l'alumine en aluminium métallique
+                pur par courant électrique intense (15 kWh/kg). Cette étape consomme massivement l'électricité.
+              </li>
+            </ul>
+            <p>
+              L'aluminium vierge est l'un des métaux les plus énergivores à produire — son empreinte
+              carbone dépend directement de la source d'électricité utilisée (charbon vs hydroélectricité).
+              Les pays producteurs en Asie (Chine) ont une empreinte bien plus élevée que ceux
+              qui utilisent l'hydroélectricité (Canada, Islande).
+            </p>
+          </div>
+        </div>
+
+        <!-- ONGLET 2 — CYCLE DE VIE -->
+        <div class="tab-pane" data-tab="fabrication">
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛏️</div>
+              <div class="timeline-content">
+                <h3>1. Extraction de la bauxite
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  La bauxite est extraite en open-pit (mines à ciel ouvert) principalement en Guinée,
+                  Brésil et Australie. L'extraction déforeste et perturbe les écosystèmes locaux.
+                  Il faut <strong>4 à 5 kg de bauxite</strong> pour produire 1 kg d'aluminium.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⚡</div>
+              <div class="timeline-content">
+                <h3>2. Raffinage &amp; électrolyse
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  Le procédé Bayer extrait l'alumine, puis l'électrolyse Hall-Héroult la réduit
+                  en aluminium pur. Ces procédés consomment <strong>~14 MJ</strong> par bouteille
+                  et émettent <strong>~600 g CO₂eq</strong> — le plus élevé des trois matériaux.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🏭</div>
+              <div class="timeline-content">
+                <h3>3. Formage &amp; fabrication
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  L'aluminium est laminé en feuilles minces puis embouties (canettes) ou filées
+                  (bouteilles). Un revêtement interne en résine époxy (possible BPA) est appliqué
+                  pour prévenir la corrosion par les boissons acides.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚢</div>
+              <div class="timeline-content">
+                <h3>4. Transport &amp; distribution
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  Avec seulement <strong>~15 g</strong> par bouteille 500 ml, l'aluminium est plus léger
+                  que le verre (300 g) et légèrement plus léger que le PET (20 g), ce qui minimise
+                  les émissions logistiques.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">📦</div>
+              <div class="timeline-content">
+                <h3>5. Collecte &amp; tri
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  L'aluminium est l'un des matériaux les plus valorisés économiquement au tri.
+                  Sa densité économique pousse les filières de récupération informelles (chiffonniers)
+                  et formelles à le collecter prioritairement. Taux de collecte : <strong>~68%</strong> aux USA.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>6. Recyclage
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  L'aluminium recyclé nécessite <strong>95% moins d'énergie</strong> que l'aluminium vierge.
+                  Il peut être recyclé à <strong>l'infini</strong> sans perte de qualité.
+                  Une canette recyclée est de retour en rayon en <strong>moins de 60 jours</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>7. Résidu final — milieu marin
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  En eau salée, l'aluminium s'oxyde (couche Al₂O₃) et subit une corrosion galvanique.
+                  Le revêtement époxy interne peut libérer des composés organiques (BPA potentiel).
+                  Durée de dégradation : <strong>80 à 500 ans</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 3 — OCÉANS -->
+        <div class="tab-pane" data-tab="ocean">
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <h3 style="margin-bottom:1rem;">L'aluminium en milieu marin</h3>
+            <p>
+              Contrairement au plastique, l'aluminium se corrode progressivement en eau salée.
+              En mer, il forme d'abord une couche d'oxyde d'aluminium (Al₂O₃) qui ralentit
+              la corrosion, puis subit une corrosion galvanique accélérée en présence
+              d'autres métaux ou de sel.
+            </p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#C08A1E;"></div>
+                <div class="deg-time">Jours 1–30</div>
+                <div class="deg-desc">Formation d'une couche d'oxyde Al₂O₃ protectrice en surface</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–10 ans</div>
+                <div class="deg-desc">Corrosion galvanique, piqûres en surface, libération du revêtement époxy</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">10–80 ans</div>
+                <div class="deg-desc">Désintégration partielle, fragmentation en éclats métalliques</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">80–500 ans</div>
+                <div class="deg-desc">Dissolution complète de l'aluminium sous forme d'ions Al³⁺</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#1a5c2a;"></div>
+                <div class="deg-time">~500 ans</div>
+                <div class="deg-desc">Dissolution totale — mais le revêtement époxy peut persister</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2.5rem auto 0;">
+            <div class="editorial">
+              <h3>Le problème du revêtement époxy</h3>
+              <p>
+                La plupart des contenants en aluminium possèdent un revêtement interne en résine époxy
+                pour prévenir la corrosion. Ces résines peuvent contenir du <strong>bisphénol A (BPA)</strong>,
+                un perturbateur endocrinien. En milieu marin, la corrosion de l'aluminium peut libérer
+                ces composés organiques dans l'eau, avec des effets potentiels sur la faune marine.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 4 — RECYCLAGE -->
+        <div class="tab-pane" data-tab="recyclage">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">95%</div>
+              <div class="stat-label">Économie d'énergie avec l'aluminium recyclé vs vierge</div>
+              <div class="stat-source">Source : Di et al., 2022</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">68%</div>
+              <div class="stat-label">Taux de recyclage des canettes aux États-Unis</div>
+              <div class="stat-source">Source : NAPCOR / Aluminum Association</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">&lt;60 jours</div>
+              <div class="stat-label">Délai de retour en rayon après recyclage</div>
+              <div class="stat-source">Source : Aluminum Association</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">∞</div>
+              <div class="stat-label">Recyclable à l'infini sans perte de qualité</div>
+              <div class="stat-source">Source : Rizzo et al., 2021</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">Le recyclage à boucle fermée de l'aluminium</h3>
+            <p>
+              L'aluminium est l'un des rares matériaux à fonctionner en véritable
+              <strong>boucle fermée</strong> : une canette recyclée devient une nouvelle canette
+              de qualité identique, sans aucune dégradation du métal.
+            </p>
+            <p style="margin-top:1rem;">
+              L'économie d'énergie de 95% est spectaculaire : recycler 1 tonne d'aluminium
+              économise environ <strong>14 MWh</strong> d'électricité. À l'échelle mondiale,
+              le recyclage de l'aluminium économise suffisamment d'énergie pour alimenter
+              des millions de foyers.
+            </p>
+            <p style="margin-top:1rem;">
+              <strong>Mais attention :</strong> cette vertu ne vaut que si l'aluminium est effectivement recyclé.
+              Dans de nombreux pays en développement, le taux de collecte est bien inférieur à 68%.
+              Et la production d'aluminium vierge reste nécessaire pour répondre à la demande croissante,
+              avec son empreinte carbone initiale très élevée.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Pages</h3>
+        <a href="index.html">Accueil</a>
+        <a href="plastique.html">Plastique PET</a>
+        <a href="verre.html">Verre</a>
+        <a href="comparaison.html">Comparaison</a>
+        <a href="ocean.html">Impact marin</a>
+        <a href="solutions.html">Solutions &amp; Sources</a>
+      </div>
+      <div>
+        <h3>Sources — Aluminium</h3>
+        <a href="#" style="pointer-events:none;">Rizzo et al., 2021</a>
+        <a href="#" style="pointer-events:none;">Di et al., 2022</a>
+        <a href="#" style="pointer-events:none;">NAPCOR, 2023</a>
+      </div>
+      <div>
+        <h3>Voir aussi</h3>
+        <a href="comparaison.html">Comparer les 3 matériaux</a>
+        <a href="ocean.html">Impact sur les océans</a>
+        <a href="solutions.html">Solutions</a>
+      </div>
+      <div class="footer-enquete">
+        Question d'enquête : "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </div>
+      <div class="footer-copy">HOR-1200 — Sciences de l'environnement — 2026.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

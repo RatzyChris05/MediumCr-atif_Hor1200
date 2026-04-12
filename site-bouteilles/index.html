@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cycle de vie des bouteilles — Impacts sur les océans</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
+    <ul class="nav-links">
+      <li><a href="plastique.html" class="nav-plastic">Plastique</a></li>
+      <li><a href="verre.html" class="nav-glass">Verre</a></li>
+      <li><a href="aluminium.html" class="nav-alu">Aluminium</a></li>
+      <li><a href="comparaison.html">Comparaison</a></li>
+      <li><a href="ocean.html">Impact marin</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="hero-content">
+      <h1>Le cycle de vie des bouteilles et leurs impacts sur les océans</h1>
+      <p class="subtitle">
+        "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </p>
+      <div class="hero-ctas">
+        <a href="plastique.html" class="btn btn-plastic">Plastique PET →</a>
+        <a href="verre.html" class="btn btn-glass">Verre →</a>
+        <a href="aluminium.html" class="btn btn-alu">Aluminium →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI S'EN PRÉOCCUPER -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Pourquoi s'en préoccuper?</h2>
+        <p>Les chiffres parlent d'eux-mêmes : la crise des bouteilles jetables est une urgence planétaire.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card fade-up">
+          <div class="stat-value" style="color:#1A6FA8;">1–2 Mt</div>
+          <div class="stat-label">de plastique entrent dans les océans chaque année</div>
+          <div class="stat-source">Source : UNEP, 2020</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-value" style="color:#C08A1E;">9%</div>
+          <div class="stat-label">seulement du plastique mondial est recyclé</div>
+          <div class="stat-source">Source : Our World in Data / UNEP 2020</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-value" style="color:#3A7D44;">450+</div>
+          <div class="stat-label">ans pour qu'une bouteille PET se dégrade en mer</div>
+          <div class="stat-source">Source : Koutsodendris et al., 2016</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES TROIS MATÉRIAUX -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Les trois matériaux</h2>
+        <p>Chaque type de bouteille a ses propres impacts environnementaux tout au long de son cycle de vie.</p>
+      </div>
+      <div class="materials-grid">
+        <!-- PET -->
+        <div class="material-card fade-up">
+          <div class="material-card-header plastic">
+            <span class="icon">🧴</span>
+            <div>
+              <h3>Plastique PET</h3>
+              <small>Polyéthylène téréphtalate</small>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <div class="material-meta">
+              <div class="meta-item">
+                <div class="meta-label">Matière première</div>
+                <div class="meta-value">Pétrole &amp; gaz naturel</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Poids (500 ml)</div>
+                <div class="meta-value">~20 g</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">CO₂ produit</div>
+                <div class="meta-value">~100 g CO₂eq</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Dégradation en mer</div>
+                <div class="meta-value">450+ ans</div>
+              </div>
+            </div>
+            <a href="plastique.html" class="btn btn-plastic" style="width:100%; text-align:center;">Découvrir →</a>
+          </div>
+        </div>
+        <!-- VERRE -->
+        <div class="material-card fade-up">
+          <div class="material-card-header glass">
+            <span class="icon">🍾</span>
+            <div>
+              <h3>Verre</h3>
+              <small>SiO₂ — Silice &amp; calcaire</small>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <div class="material-meta">
+              <div class="meta-item">
+                <div class="meta-label">Matière première</div>
+                <div class="meta-value">Sable siliceux</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Poids (500 ml)</div>
+                <div class="meta-value">~300 g</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">CO₂ produit</div>
+                <div class="meta-value">~550 g CO₂eq</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Dégradation en mer</div>
+                <div class="meta-value">~4 000 ans</div>
+              </div>
+            </div>
+            <a href="verre.html" class="btn btn-glass" style="width:100%; text-align:center;">Découvrir →</a>
+          </div>
+        </div>
+        <!-- ALUMINIUM -->
+        <div class="material-card fade-up">
+          <div class="material-card-header alu">
+            <span class="icon">🥤</span>
+            <div>
+              <h3>Aluminium</h3>
+              <small>Al — Bauxite</small>
+            </div>
+          </div>
+          <div class="material-card-body">
+            <div class="material-meta">
+              <div class="meta-item">
+                <div class="meta-label">Matière première</div>
+                <div class="meta-value">Bauxite (minerai)</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Poids (500 ml)</div>
+                <div class="meta-value">~15 g</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">CO₂ produit</div>
+                <div class="meta-value">~600 g CO₂eq</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label">Dégradation en mer</div>
+                <div class="meta-value">80–500 ans</div>
+              </div>
+            </div>
+            <a href="aluminium.html" class="btn btn-alu" style="width:100%; text-align:center;">Découvrir →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTE INTERACTIVE — PLASTIC ADRIFT -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Où va le plastique?</h2>
+        <p>
+          L'outil <strong>Plastic Adrift</strong> simule la trajectoire d'un objet flottant à partir de n'importe quel point du globe.
+          Sélectionnez une région pour visualiser où dérivera un déchet plastique au fil du temps,
+          en tenant compte des courants océaniques réels.
+        </p>
+      </div>
+      <div class="iframe-container">
+        <iframe
+          src="https://plasticadrift.org"
+          width="100%"
+          height="500px"
+          style="border: none;"
+          title="Trajectoire des plastiques dans les océans — Plastic Adrift"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="iframe-fallback">
+        Si la carte ne s'affiche pas :
+        <a href="https://plasticadrift.org" target="_blank" rel="noopener">ouvrir Plastic Adrift directement →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- DONNÉES MONDIALES — OUR WORLD IN DATA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Données mondiales</h2>
+        <p>Visualisations interactives issues de Our World in Data (CC BY).</p>
+      </div>
+
+      <h3 style="margin-bottom:1rem;">Pollution plastique dans les océans par pays</h3>
+      <div class="iframe-container">
+        <iframe
+          src="https://ourworldindata.org/grapher/share-of-global-plastic-waste-emitted-to-the-ocean"
+          loading="lazy"
+          style="width:100%; height:600px; border:none;"
+          title="Part des déchets plastiques émis dans l'océan par pays"
+        ></iframe>
+      </div>
+
+      <h3 style="margin:2.5rem 0 1rem;">Méthodes de gestion des déchets plastiques</h3>
+      <div class="iframe-container">
+        <iframe
+          src="https://ourworldindata.org/grapher/plastic-waste-by-disposal-method"
+          loading="lazy"
+          style="width:100%; height:600px; border:none;"
+          title="Gestion des déchets plastiques dans le monde"
+        ></iframe>
+      </div>
+
+      <h3 style="margin:2.5rem 0 1rem;">Production mondiale de plastique depuis 1950</h3>
+      <div class="iframe-container">
+        <iframe
+          src="https://ourworldindata.org/grapher/global-plastics-production"
+          loading="lazy"
+          style="width:100%; height:500px; border:none;"
+          title="Production mondiale de plastique depuis 1950"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Pages</h3>
+        <a href="plastique.html">Plastique PET</a>
+        <a href="verre.html">Verre</a>
+        <a href="aluminium.html">Aluminium</a>
+        <a href="comparaison.html">Comparaison</a>
+        <a href="ocean.html">Impact marin</a>
+        <a href="solutions.html">Solutions &amp; Sources</a>
+      </div>
+      <div>
+        <h3>Outils interactifs</h3>
+        <a href="https://plasticadrift.org" target="_blank" rel="noopener">Plastic Adrift</a>
+        <a href="https://theoceancleanup.com/plastic-tracker/" target="_blank" rel="noopener">Plastic Tracker</a>
+        <a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener">Our World in Data</a>
+      </div>
+      <div>
+        <h3>Sources principales</h3>
+        <a href="https://www.lifecycleinitiative.org/wp-content/uploads/2020/07/UNEP_PLASTIC-BOTTLES-REPORT_29-JUNE-2020_final-low-res.pdf" target="_blank" rel="noopener">UNEP 2020</a>
+        <a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener">Our World in Data</a>
+        <a href="https://www.recyc-quebec.gouv.qc.ca" target="_blank" rel="noopener">RECYC-QUÉBEC</a>
+      </div>
+      <div class="footer-enquete">
+        Question d'enquête : "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </div>
+      <div class="footer-copy">
+        HOR-1200 — Sciences de l'environnement — 2026. Sources : UNEP, Our World in Data, CIRAIG, RECYC-QUÉBEC, Assemblée des Premières Nations.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

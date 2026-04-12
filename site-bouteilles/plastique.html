@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plastique PET — Cycle de vie &amp; impacts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
+    <ul class="nav-links">
+      <li><a href="plastique.html" class="nav-plastic active">Plastique</a></li>
+      <li><a href="verre.html" class="nav-glass">Verre</a></li>
+      <li><a href="aluminium.html" class="nav-alu">Aluminium</a></li>
+      <li><a href="comparaison.html">Comparaison</a></li>
+      <li><a href="ocean.html">Impact marin</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <header class="page-header plastic">
+    <div class="formula">PET — Polyéthylène téréphtalate</div>
+    <h1>Plastique PET</h1>
+    <p class="origin">Matière première : pétrole brut &amp; gaz naturel (TPA + MEG)</p>
+  </header>
+
+  <!-- TABS -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="ressources">Ressources naturelles</button>
+          <button class="tab-btn" data-tab="fabrication">Cycle de vie</button>
+          <button class="tab-btn" data-tab="ocean">Devenir dans les océans</button>
+          <button class="tab-btn" data-tab="recyclage">Recyclage</button>
+        </div>
+
+        <!-- ONGLET 1 — RESSOURCES -->
+        <div class="tab-pane active" data-tab="ressources">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">3,4 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml</div>
+              <div class="stat-source">Source : Bałdowska-Witos et al., 2021</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">~100 g</div>
+              <div class="stat-label">CO₂ équivalent émis par bouteille</div>
+              <div class="stat-source">Source : UNEP, 2020</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">1,39 L</div>
+              <div class="stat-label">Eau utilisée à la fabrication (hors contenu)</div>
+              <div class="stat-source">Source : Bałdowska-Witos et al., 2021</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">~20 g</div>
+              <div class="stat-label">Poids d'une bouteille PET 500 ml</div>
+              <div class="stat-source">Source : données industrielles</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">D'où vient le PET?</h3>
+            <p>
+              Le polyéthylène téréphtalate (PET) est un polymère thermoplastique dérivé du pétrole brut
+              et du gaz naturel. Sa synthèse requiert deux monomères principaux :
+              l'<strong>acide téréphtalique purifié (TPA)</strong> et l'<strong>éthylène glycol (MEG)</strong>,
+              tous deux issus du raffinage pétrolier.
+            </p>
+            <p style="margin-top:1rem;">
+              La production mondiale de PET dépasse <strong>65 millions de tonnes par an</strong>,
+              faisant des bouteilles en plastique l'un des produits manufacturés les plus répandus sur Terre.
+              Cette dépendance aux énergies fossiles signifie que chaque bouteille produite contribue directement
+              aux émissions de gaz à effet de serre et à l'épuisement des ressources non renouvelables.
+            </p>
+          </div>
+        </div>
+
+        <!-- ONGLET 2 — FABRICATION / CYCLE DE VIE -->
+        <div class="tab-pane" data-tab="fabrication">
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛽</div>
+              <div class="timeline-content">
+                <h3>1. Extraction des matières premières
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  Extraction du pétrole brut et du gaz naturel par forage. Raffinage pour produire
+                  le TPA et le MEG. Processus énergivore à l'origine d'émissions de GES significatives
+                  et de risques de marées noires.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🏭</div>
+              <div class="timeline-content">
+                <h3>2. Transformation &amp; fabrication
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  Polymérisation du PET, puis moulage par injection-étirage-soufflage (ISBM).
+                  La bouteille est formée à partir d'une préforme en PET chauffée à ~100°C.
+                  Consommation : 3,4 MJ et ~100 g CO₂eq par bouteille.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚢</div>
+              <div class="timeline-content">
+                <h3>3. Transport &amp; distribution
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  La légèreté du PET (~20 g) en fait le matériau le plus économique à transporter.
+                  Mais la logistique mondiale génère des émissions liées au transport maritime, terrestre
+                  et aérien des marchandises.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">💧</div>
+              <div class="timeline-content">
+                <h3>4. Utilisation
+                  <span class="badge badge-low">Impact faible</span>
+                </h3>
+                <p>
+                  Durée de vie typique : quelques minutes à quelques jours.
+                  Le PET est utilisé à usage unique dans la très grande majorité des cas.
+                  Certaines bouteilles peuvent libérer de l'antimoine dans l'eau sous chaleur ou lumière UV.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>5. Collecte &amp; tri
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  Seulement ~30% des bouteilles PET sont collectées pour le recyclage dans les pays développés.
+                  Dans les pays en développement, ce taux chute à moins de 10%.
+                  Le bouchon, l'étiquette et les résidus compliquent le tri.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🔄</div>
+              <div class="timeline-content">
+                <h3>6. Recyclage
+                  <span class="badge badge-medium">Impact modéré</span>
+                </h3>
+                <p>
+                  Le PET se recycle en R-PET (PET recyclé) utilisé pour des fibres textiles, de nouveaux
+                  emballages ou des bouteilles. Mais la teneur en recyclé reste faible :
+                  <strong>seulement 3%</strong> en moyenne dans les bouteilles neuves aux États-Unis.
+                  Le taux de recyclage mondial plafonne à <strong>9%</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>7. Résidu final — milieu marin
+                  <span class="badge badge-high">Impact élevé</span>
+                </h3>
+                <p>
+                  91% du plastique n'est jamais recyclé. Une grande part finit dans des décharges,
+                  des incinérateurs, ou directement dans l'environnement.
+                  Entre 1 et 2 millions de tonnes atteignent les océans chaque année.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 3 — OCÉANS -->
+        <div class="tab-pane" data-tab="ocean">
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <h3 style="margin-bottom:1rem;">Comment le PET se dégrade-t-il en mer?</h3>
+            <p>
+              Le PET est un polymère synthétique : aucun organisme naturel ne possède les enzymes
+              nécessaires pour le biodégrader efficacement. En milieu marin, il se <em>fragmente</em>
+              progressivement sous l'effet des UV, des vagues et des chocs mécaniques,
+              mais ne disparaît jamais vraiment.
+            </p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#1A6FA8;"></div>
+                <div class="deg-time">Jour 1</div>
+                <div class="deg-desc">Bouteille entière à la surface, colonisation par des biofilms</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–5 ans</div>
+                <div class="deg-desc">Fragilisation par les UV, premières fissures, fragments de 5–50 cm</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">5–50 ans</div>
+                <div class="deg-desc">Fragmentation en microplastiques (≤5 mm). Ingestion par la faune marine</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">50–450 ans</div>
+                <div class="deg-desc">Nanoplastiques (≤1 µm), pénétration dans les tissus vivants</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#721c24;"></div>
+                <div class="deg-time">450+ ans</div>
+                <div class="deg-desc">Aucune biodégradation complète — le polymère persiste indéfiniment</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2.5rem auto 0;">
+            <h3 style="margin-bottom:1rem;">Substances libérées</h3>
+            <div class="stats-grid">
+              <div class="stat-card fade-up">
+                <div class="stat-value" style="font-size:22px;">Antimoine</div>
+                <div class="stat-label">Catalyseur de production, libéré en eau de mer chaude ou acide</div>
+                <div class="stat-source">Source : Koutsodendris et al., 2016</div>
+              </div>
+              <div class="stat-card fade-up">
+                <div class="stat-value" style="font-size:22px;">Phtalates</div>
+                <div class="stat-label">Plastifiants, perturbateurs endocriniens potentiels</div>
+                <div class="stat-source">Source : UNEP, 2020</div>
+              </div>
+              <div class="stat-card fade-up">
+                <div class="stat-value" style="font-size:22px;">Additifs</div>
+                <div class="stat-label">Colorants, stabilisants UV — accumulation dans les organismes marins</div>
+                <div class="stat-source">Source : Völker et al., 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ONGLET 4 — RECYCLAGE -->
+        <div class="tab-pane" data-tab="recyclage">
+          <div class="stats-grid" style="margin-bottom:2.5rem;">
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">9%</div>
+              <div class="stat-label">Taux de recyclage mondial du plastique</div>
+              <div class="stat-source">Source : UNEP, 2020</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">3%</div>
+              <div class="stat-label">Contenu recyclé moyen dans les nouvelles bouteilles (USA)</div>
+              <div class="stat-source">Source : NAPCOR, 2023</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">~30%</div>
+              <div class="stat-label">Taux de collecte dans les pays riches</div>
+              <div class="stat-source">Source : Our World in Data</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 style="margin-bottom:1rem;">Boucle ouverte vs boucle fermée</h3>
+            <p>
+              Le recyclage du PET est dit en <strong>boucle ouverte</strong> : une bouteille recyclée
+              ne devient généralement pas une nouvelle bouteille, mais une fibre polaire, un tapis ou un emballage
+              de moindre valeur. Chaque recyclage dégrade la qualité du polymère (mélange de couleurs, contamination).
+            </p>
+            <p style="margin-top:1rem;">
+              La technologie de <strong>dépolymérisation chimique</strong> (ex. glycolyse, méthanolise)
+              permet théoriquement une boucle fermée — PET → monomères → PET vierge —
+              mais reste coûteuse et marginale à l'échelle industrielle en 2025.
+            </p>
+            <p style="margin-top:1rem;">
+              Le principal obstacle : la <strong>pollution par les bouchons, étiquettes et résidus alimentaires</strong>,
+              qui nécessite un tri minutieux et coûteux avant tout retraitement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Pages</h3>
+        <a href="index.html">Accueil</a>
+        <a href="verre.html">Verre</a>
+        <a href="aluminium.html">Aluminium</a>
+        <a href="comparaison.html">Comparaison</a>
+        <a href="ocean.html">Impact marin</a>
+        <a href="solutions.html">Solutions &amp; Sources</a>
+      </div>
+      <div>
+        <h3>Sources — Plastique PET</h3>
+        <a href="#" style="pointer-events:none;">Koutsodendris et al. (2016)</a>
+        <a href="#" style="pointer-events:none;">Bałdowska-Witos et al. (2021)</a>
+        <a href="https://www.lifecycleinitiative.org/wp-content/uploads/2020/07/UNEP_PLASTIC-BOTTLES-REPORT_29-JUNE-2020_final-low-res.pdf" target="_blank" rel="noopener">UNEP (2020)</a>
+        <a href="#" style="pointer-events:none;">NAPCOR (2023)</a>
+      </div>
+      <div>
+        <h3>Voir aussi</h3>
+        <a href="comparaison.html">Comparer les 3 matériaux</a>
+        <a href="ocean.html">Impact sur les océans</a>
+        <a href="solutions.html">Solutions</a>
+      </div>
+      <div class="footer-enquete">
+        Question d'enquête : "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </div>
+      <div class="footer-copy">
+        HOR-1200 — Sciences de l'environnement — 2026.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
