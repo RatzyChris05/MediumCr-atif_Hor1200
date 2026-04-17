@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cycle de vie des bouteilles — Impacts sur les océans</title>
   <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
 </head>
 <body>
 
@@ -12,12 +18,10 @@
   <nav>
     <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
     <ul class="nav-links">
-      <li><a href="plastique.html" class="nav-plastic">Plastique</a></li>
-      <li><a href="verre.html" class="nav-glass">Verre</a></li>
-      <li><a href="aluminium.html" class="nav-alu">Aluminium</a></li>
-      <li><a href="comparaison.html">Comparaison</a></li>
-      <li><a href="ocean.html">Impact marin</a></li>
-      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="comparaison.html">D&eacute;veloppement 1</a></li>
+      <li><a href="ocean.html">D&eacute;veloppement 2</a></li>
+      <li><a href="solutions.html">Conclusion</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -30,39 +34,11 @@
     <div class="hero-content">
       <h1>Le cycle de vie des bouteilles et leurs impacts sur les océans</h1>
       <p class="subtitle">
-        "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+        Comprendre comment les bouteilles se déplacent, se fragmentent et finissent dans les milieux marins.
       </p>
       <div class="hero-ctas">
-        <a href="plastique.html" class="btn btn-plastic">Plastique PET →</a>
-        <a href="verre.html" class="btn btn-glass">Verre →</a>
-        <a href="aluminium.html" class="btn btn-alu">Aluminium →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- POURQUOI S'EN PRÉOCCUPER -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-title">
-        <h2>Pourquoi s'en préoccuper?</h2>
-        <p>Les chiffres parlent d'eux-mêmes : la crise des bouteilles jetables est une urgence planétaire.</p>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-card fade-up">
-          <div class="stat-value" style="color:#1A6FA8;">1–2 Mt</div>
-          <div class="stat-label">de plastique entrent dans les océans chaque année</div>
-          <div class="stat-source">Source : UNEP, 2020</div>
-        </div>
-        <div class="stat-card fade-up">
-          <div class="stat-value" style="color:#C08A1E;">9%</div>
-          <div class="stat-label">seulement du plastique mondial est recyclé</div>
-          <div class="stat-source">Source : Our World in Data / UNEP 2020</div>
-        </div>
-        <div class="stat-card fade-up">
-          <div class="stat-value" style="color:#3A7D44;">450+</div>
-          <div class="stat-label">ans pour qu'une bouteille PET se dégrade en mer</div>
-          <div class="stat-source">Source : Koutsodendris et al., 2016</div>
-        </div>
+        <a href="comparaison.html" class="btn btn-plastic">Développement 1 →</a>
+        <a href="ocean.html" class="btn btn-glass">Développement 2 →</a>
       </div>
     </div>
   </section>
@@ -103,7 +79,7 @@
                 <div class="meta-value">450+ ans</div>
               </div>
             </div>
-            <a href="plastique.html" class="btn btn-plastic" style="width:100%; text-align:center;">Découvrir →</a>
+            <a href="comparaison.html" class="btn btn-plastic" style="width:100%; text-align:center;">Voir en d&eacute;veloppement 1 →</a>
           </div>
         </div>
         <!-- VERRE -->
@@ -134,7 +110,7 @@
                 <div class="meta-value">~4 000 ans</div>
               </div>
             </div>
-            <a href="verre.html" class="btn btn-glass" style="width:100%; text-align:center;">Découvrir →</a>
+            <a href="comparaison.html" class="btn btn-glass" style="width:100%; text-align:center;">Voir en d&eacute;veloppement 1 →</a>
           </div>
         </div>
         <!-- ALUMINIUM -->
@@ -165,38 +141,10 @@
                 <div class="meta-value">80–500 ans</div>
               </div>
             </div>
-            <a href="aluminium.html" class="btn btn-alu" style="width:100%; text-align:center;">Découvrir →</a>
+            <a href="comparaison.html" class="btn btn-alu" style="width:100%; text-align:center;">Voir en d&eacute;veloppement 1 →</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CARTE INTERACTIVE — PLASTIC ADRIFT -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-title">
-        <h2>Où va le plastique?</h2>
-        <p>
-          L'outil <strong>Plastic Adrift</strong> simule la trajectoire d'un objet flottant à partir de n'importe quel point du globe.
-          Sélectionnez une région pour visualiser où dérivera un déchet plastique au fil du temps,
-          en tenant compte des courants océaniques réels.
-        </p>
-      </div>
-      <div class="iframe-container">
-        <iframe
-          src="https://plasticadrift.org"
-          width="100%"
-          height="500px"
-          style="border: none;"
-          title="Trajectoire des plastiques dans les océans — Plastic Adrift"
-          loading="lazy"
-        ></iframe>
-      </div>
-      <p class="iframe-fallback">
-        Si la carte ne s'affiche pas :
-        <a href="https://plasticadrift.org" target="_blank" rel="noopener">ouvrir Plastic Adrift directement →</a>
-      </p>
     </div>
   </section>
 
@@ -217,26 +165,30 @@
           title="Part des déchets plastiques émis dans l'océan par pays"
         ></iframe>
       </div>
+    </div>
+  </section>
 
-      <h3 style="margin:2.5rem 0 1rem;">Méthodes de gestion des déchets plastiques</h3>
-      <div class="iframe-container">
-        <iframe
-          src="https://ourworldindata.org/grapher/plastic-waste-by-disposal-method"
-          loading="lazy"
-          style="width:100%; height:600px; border:none;"
-          title="Gestion des déchets plastiques dans le monde"
-        ></iframe>
+  <!-- CARTE INTERACTIVE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Où va le plastique?</h2>
+        <p>
+          Aperçu visuel du <strong>Plastic Tracker</strong> de The Ocean Cleanup, pour montrer comment un plastique peut dériver dans l'océan.
+        </p>
       </div>
 
-      <h3 style="margin:2.5rem 0 1rem;">Production mondiale de plastique depuis 1950</h3>
-      <div class="iframe-container">
-        <iframe
-          src="https://ourworldindata.org/grapher/global-plastics-production"
-          loading="lazy"
-          style="width:100%; height:500px; border:none;"
-          title="Production mondiale de plastique depuis 1950"
-        ></iframe>
+      <div class="tracker-preview-card fade-up">
+        <img
+          class="tracker-preview-image"
+          src="assets/image.png"
+          alt="Carte Plastic Tracker montrant les principales zones d'accumulation de plastique dans les océans"
+        >
       </div>
+
+      <p class="iframe-fallback">
+        <a href="https://theoceancleanup.com/plastic-tracker/" target="_blank" rel="noopener noreferrer">Ouvrir le Plastic Tracker officiel</a>
+      </p>
     </div>
   </section>
 
@@ -245,16 +197,14 @@
     <div class="footer-inner">
       <div>
         <h3>Pages</h3>
-        <a href="plastique.html">Plastique PET</a>
-        <a href="verre.html">Verre</a>
-        <a href="aluminium.html">Aluminium</a>
-        <a href="comparaison.html">Comparaison</a>
-        <a href="ocean.html">Impact marin</a>
-        <a href="solutions.html">Solutions &amp; Sources</a>
+        <a href="index.html">Introduction</a>
+        <a href="comparaison.html">D&eacute;veloppement 1</a>
+        <a href="ocean.html">D&eacute;veloppement 2</a>
+        <a href="solutions.html">Conclusion</a>
       </div>
       <div>
         <h3>Outils interactifs</h3>
-        <a href="https://plasticadrift.org" target="_blank" rel="noopener">Plastic Adrift</a>
+        <a href="https://ourworldindata.org/grapher/probability-mismanaged-plastic-ocean?tab=map" target="_blank" rel="noopener">Carte OWID (probabilit&eacute; d'&eacute;mission)</a>
         <a href="https://theoceancleanup.com/plastic-tracker/" target="_blank" rel="noopener">Plastic Tracker</a>
         <a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener">Our World in Data</a>
       </div>
@@ -273,6 +223,11 @@
     </div>
   </footer>
 
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
   <script src="js/main.js"></script>
 </body>
 </html>

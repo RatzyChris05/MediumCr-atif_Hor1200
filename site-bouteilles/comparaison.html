@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparaison des matériaux — Plastique, Verre &amp; Aluminium</title>
+  <title>D&eacute;veloppement 1 — Comparaison des mat&eacute;riaux</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,12 +12,10 @@
   <nav>
     <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
     <ul class="nav-links">
-      <li><a href="plastique.html" class="nav-plastic">Plastique</a></li>
-      <li><a href="verre.html" class="nav-glass">Verre</a></li>
-      <li><a href="aluminium.html" class="nav-alu">Aluminium</a></li>
-      <li><a href="comparaison.html" class="active">Comparaison</a></li>
-      <li><a href="ocean.html">Impact marin</a></li>
-      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="comparaison.html" class="active">D&eacute;veloppement 1</a></li>
+      <li><a href="ocean.html">D&eacute;veloppement 2</a></li>
+      <li><a href="solutions.html">Conclusion</a></li>
     </ul>
     <button class="nav-hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -26,10 +24,70 @@
 
   <!-- EN-TÊTE -->
   <header class="page-header ocean">
-    <div class="formula">Plastique PET · Verre · Aluminium</div>
-    <h1>Comparaison des trois matériaux</h1>
-    <p class="origin">Analyse cycle de vie — bouteille 500 ml</p>
+    <div class="formula">Page 2 sur 4 · D&eacute;veloppement 1</div>
+    <h1>Comparaison des trois mat&eacute;riaux</h1>
+    <p class="origin">Analyse du cycle de vie pour une bouteille de 500 ml</p>
   </header>
+
+  <!-- CADRE D'ANALYSE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Comment comparer de façon juste?</h2>
+        <p>On compare chaque matériau sur les mêmes étapes du cycle de vie, avec les mêmes unités.</p>
+      </div>
+      <div class="key-points-grid fade-up">
+        <article class="key-point">
+          <h3>1. Ressources naturelles</h3>
+          <p>Pétrole et gaz pour le PET, sable pour le verre, bauxite pour l'aluminium.</p>
+        </article>
+        <article class="key-point">
+          <h3>2. Fabrication</h3>
+          <p>On mesure l'énergie consommée et les émissions de CO₂ lors de la production initiale.</p>
+        </article>
+        <article class="key-point">
+          <h3>3. Transport et usage</h3>
+          <p>Le poids de la bouteille change fortement l'empreinte liée à la logistique.</p>
+        </article>
+        <article class="key-point">
+          <h3>4. Fin de vie</h3>
+          <p>Taux de recyclage réel, possibilité de réemploi et persistance en mer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIQUES COMPARATIFS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Comparaison visuelle</h2>
+        <p>Quatre indicateurs clés pour comprendre les compromis entre PET, verre et aluminium.</p>
+      </div>
+      <div class="chart-grid">
+        <article class="chart-card fade-up">
+          <h3>Énergie de production (MJ / bouteille)</h3>
+          <canvas id="energyChart" height="220"></canvas>
+          <p class="chart-note">Plus la barre est élevée, plus la fabrication est énergivore.</p>
+        </article>
+        <article class="chart-card fade-up">
+          <h3>Émissions CO₂ (g CO₂eq / bouteille)</h3>
+          <canvas id="co2Chart" height="220"></canvas>
+          <p class="chart-note">Le verre et l'aluminium vierge émettent davantage à la production.</p>
+        </article>
+        <article class="chart-card fade-up">
+          <h3>Persistance en mer (années)</h3>
+          <canvas id="persistenceChart" height="220"></canvas>
+          <p class="chart-note">Le verre persiste très longtemps, le PET se fragmente en microplastiques.</p>
+        </article>
+        <article class="chart-card fade-up">
+          <h3>Taux de recyclage (%)</h3>
+          <canvas id="recyclingChart" height="220"></canvas>
+          <p class="chart-note">Le taux réel de recyclage du PET reste le plus faible.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- TABLEAU RÉCAPITULATIF -->
   <section class="section section-alt">
@@ -168,17 +226,33 @@
     </div>
   </section>
 
+  <!-- CONTEXTE MONDIAL -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Donnée mondiale complémentaire</h2>
+        <p>Les impacts varient aussi selon les filières et les types d'emballages à l'échelle globale.</p>
+      </div>
+      <div class="iframe-container fade-up">
+        <iframe
+          src="https://ourworldindata.org/grapher/environmental-impact-different-types-grocery-bags"
+          loading="lazy"
+          style="width:100%; height:600px; border:none;"
+          title="Comparaison d'impacts environnementaux selon différents types d'emballages"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div>
         <h3>Pages</h3>
         <a href="index.html">Accueil</a>
-        <a href="plastique.html">Plastique PET</a>
-        <a href="verre.html">Verre</a>
-        <a href="aluminium.html">Aluminium</a>
-        <a href="ocean.html">Impact marin</a>
-        <a href="solutions.html">Solutions &amp; Sources</a>
+        <a href="comparaison.html">D&eacute;veloppement 1</a>
+        <a href="ocean.html">D&eacute;veloppement 2</a>
+        <a href="solutions.html">Conclusion</a>
       </div>
       <div>
         <h3>Sources</h3>
@@ -199,6 +273,55 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function createHorizontalBarChart(canvas, label, data, maxValue) {
+      return new Chart(canvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: ['Plastique PET', 'Verre', 'Aluminium'],
+          datasets: [{
+            label,
+            data,
+            backgroundColor: ['#1A6FA8', '#3A7D44', '#C08A1E'],
+            borderRadius: 8,
+            borderSkipped: false
+          }]
+        },
+        options: {
+          animation: { duration: 1000 },
+          responsive: true,
+          maintainAspectRatio: true,
+          indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: {
+            x: {
+              beginAtZero: true,
+              suggestedMax: maxValue,
+              grid: { color: 'rgba(10,37,64,0.08)' }
+            },
+            y: { grid: { display: false } }
+          }
+        }
+      });
+    }
+
+    observeChart('energyChart', (canvas) =>
+      createHorizontalBarChart(canvas, 'Énergie de production (MJ / bouteille)', [3.4, 7.6, 14], 16)
+    );
+
+    observeChart('co2Chart', (canvas) =>
+      createHorizontalBarChart(canvas, 'CO₂ émis (g CO₂eq / bouteille)', [100, 550, 600], 650)
+    );
+
+    observeChart('persistenceChart', (canvas) =>
+      createHorizontalBarChart(canvas, 'Persistance en mer (années)', [450, 4000, 500], 4200)
+    );
+
+    observeChart('recyclingChart', (canvas) =>
+      createHorizontalBarChart(canvas, 'Taux de recyclage (%)', [9, 35, 68], 75)
+    );
+  </script>
 </body>
 </html>
