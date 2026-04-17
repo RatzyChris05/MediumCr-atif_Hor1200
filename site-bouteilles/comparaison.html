@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comparaison des matériaux — Plastique, Verre &amp; Aluminium</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -31,48 +30,6 @@
     <h1>Comparaison des trois matériaux</h1>
     <p class="origin">Analyse cycle de vie — bouteille 500 ml</p>
   </header>
-
-  <!-- GRAPHIQUES CHART.JS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Comparaison visuelle</h2>
-        <p>Graphiques à barres interactifs pour comparer les trois matériaux sur quatre critères clés.</p>
-      </div>
-
-      <!-- Énergie -->
-      <div style="max-width:750px; margin:0 auto 4rem;">
-        <h3 style="margin-bottom:1.5rem; text-align:center;">
-          Énergie de production <span style="color:var(--color-muted); font-weight:400;">(MJ / bouteille 500 ml)</span>
-        </h3>
-        <canvas id="energyChart" height="180" aria-label="Graphique énergie de production"></canvas>
-      </div>
-
-      <!-- CO2 -->
-      <div style="max-width:750px; margin:0 auto 4rem;">
-        <h3 style="margin-bottom:1.5rem; text-align:center;">
-          Émissions CO₂ à la production <span style="color:var(--color-muted); font-weight:400;">(g CO₂eq / bouteille)</span>
-        </h3>
-        <canvas id="co2Chart" height="180" aria-label="Graphique émissions CO2"></canvas>
-      </div>
-
-      <!-- Persistance -->
-      <div style="max-width:750px; margin:0 auto 4rem;">
-        <h3 style="margin-bottom:1.5rem; text-align:center;">
-          Persistance en mer <span style="color:var(--color-muted); font-weight:400;">(années)</span>
-        </h3>
-        <canvas id="persChart" height="180" aria-label="Graphique persistance en mer"></canvas>
-      </div>
-
-      <!-- Recyclage -->
-      <div style="max-width:750px; margin:0 auto 4rem;">
-        <h3 style="margin-bottom:1.5rem; text-align:center;">
-          Taux de recyclage mondial <span style="color:var(--color-muted); font-weight:400;">(%)</span>
-        </h3>
-        <canvas id="recycChart" height="180" aria-label="Graphique taux de recyclage"></canvas>
-      </div>
-    </div>
-  </section>
 
   <!-- TABLEAU RÉCAPITULATIF -->
   <section class="section section-alt">
@@ -211,28 +168,6 @@
     </div>
   </section>
 
-  <!-- GRAPHIQUE OUR WORLD IN DATA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-title">
-        <h2>Impact environnemental comparé des emballages</h2>
-        <p>Données Our World in Data (CC BY).</p>
-      </div>
-      <div class="iframe-container">
-        <iframe
-          src="https://ourworldindata.org/grapher/environmental-impact-different-types-grocery-bags"
-          loading="lazy"
-          style="width:100%; height:600px; border:none;"
-          title="Impact environnemental des différents types d'emballages"
-        ></iframe>
-      </div>
-      <p class="iframe-fallback">
-        Si le graphique ne s'affiche pas :
-        <a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener">voir Our World in Data →</a>
-      </p>
-    </div>
-  </section>
-
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
@@ -265,50 +200,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    // Shared chart options
-    const COLORS = ['#1A6FA8', '#3A7D44', '#C08A1E'];
-    const LABELS = ['Plastique PET', 'Verre', 'Aluminium'];
-    const ANIM   = { duration: 1000, easing: 'easeOutQuart' };
-
-    function makeBarChart(id, data, label, unit) {
-      const canvas = document.getElementById(id);
-      if (!canvas) return;
-      new Chart(canvas.getContext('2d'), {
-        type: 'bar',
-        data: {
-          labels: LABELS,
-          datasets: [{
-            label: label,
-            data: data,
-            backgroundColor: COLORS,
-            borderRadius: 6,
-          }]
-        },
-        options: {
-          indexAxis: 'y',
-          responsive: true,
-          animation: ANIM,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              callbacks: {
-                label: ctx => ` ${ctx.parsed.x} ${unit}`
-              }
-            }
-          },
-          scales: {
-            x: { beginAtZero: true },
-            y: { ticks: { font: { size: 14 } } }
-          }
-        }
-      });
-    }
-
-    makeBarChart('energyChart', [3.4, 7.6, 14],   'Énergie de production', 'MJ');
-    makeBarChart('co2Chart',    [100, 550, 600],   'Émissions CO₂', 'g CO₂eq');
-    makeBarChart('persChart',   [450, 4000, 500],  'Persistance en mer', 'ans');
-    makeBarChart('recycChart',  [9, 35, 68],       'Taux de recyclage', '%');
-  </script>
 </body>
 </html>
