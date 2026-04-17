@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacts des matériaux — Plastique, Verre &amp; Aluminium</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="nav-logo">Bouteilles &amp; Océans</a>
+    <ul class="nav-links">
+      <li><a href="impacts.html" class="active">Impacts</a></li>
+      <li><a href="comparaison.html">Comparaison</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- EN-TÊTE -->
+  <header class="page-header ocean">
+    <div class="formula">Énergie · CO₂ · Cycle de vie · Devenir dans les océans</div>
+    <h1>Impacts des trois matériaux</h1>
+    <p class="origin">Analyse du cycle de vie — bouteille 500 ml · Sources : Tamburini et al. (2021), De Feo et al. (2022), UNEP (2020)</p>
+  </header>
+
+  <!-- TABS MATÉRIAUX -->
+  <section class="section">
+    <div class="container">
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="pet">🧴 Plastique PET</button>
+          <button class="tab-btn" data-tab="verre">🍾 Verre</button>
+          <button class="tab-btn" data-tab="alu">🥤 Aluminium</button>
+        </div>
+
+        <!-- ══════════════ PLASTIQUE PET ══════════════ -->
+        <div class="tab-pane active" data-tab="pet">
+
+          <h3 class="impacts-section-title" style="color:var(--color-plastic);">Énergie de production &amp; CO₂</h3>
+          <div class="stats-grid" style="margin-bottom:2rem;">
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">3,4 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">~100 g</div>
+              <div class="stat-label">CO₂ équivalent émis à la production</div>
+              <div class="stat-source">Source : UNEP / Life Cycle Initiative, 2020</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">~20 g</div>
+              <div class="stat-label">Poids d'une bouteille PET 500 ml</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+            <div class="stat-card plastic fade-up">
+              <div class="stat-value">9%</div>
+              <div class="stat-label">Taux de recyclage mondial du plastique</div>
+              <div class="stat-source">Source : UNEP / Life Cycle Initiative, 2020</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <p>
+              Le PET (polyéthylène téréphtalate) est dérivé du pétrole brut et du gaz naturel.
+              Sa production requiert l'<strong>acide téréphtalique (TPA)</strong> et l'<strong>éthylène glycol (MEG)</strong>,
+              tous deux issus du raffinage pétrolier. Selon Tamburini et al. (2021), le PET présente
+              le plus bas bilan énergétique à la production des trois matériaux,
+              mais sa faiblesse majeure est son devenir en fin de vie :
+              moins de <strong>9% du plastique mondial est recyclé</strong> (UNEP, 2020).
+            </p>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-plastic);">Cycle de vie</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛽</div>
+              <div class="timeline-content">
+                <h3>1. Extraction — pétrole &amp; gaz <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Raffinage pour produire le TPA et le MEG. Processus énergivore à l'origine d'émissions de GES et de risques de déversements. Dépendance directe aux combustibles fossiles.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🏭</div>
+              <div class="timeline-content">
+                <h3>2. Fabrication — moulage ISBM <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Polymérisation du PET, puis moulage par injection-étirage-soufflage. La bouteille est formée à ~100°C. Consommation : 3,4 MJ et ~100 g CO₂eq par bouteille (Tamburini et al., 2021).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚢</div>
+              <div class="timeline-content">
+                <h3>3. Transport &amp; distribution <span class="badge badge-medium">Impact modéré</span></h3>
+                <p>La légèreté (~20 g) réduit les émissions de transport. Mais la logistique mondiale génère tout de même des émissions liées au transport maritime et terrestre.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">💧</div>
+              <div class="timeline-content">
+                <h3>4. Utilisation — usage unique <span class="badge badge-low">Impact faible</span></h3>
+                <p>Durée de vie de quelques minutes à quelques jours. Le PET est utilisé à usage unique dans la très grande majorité des cas. Selon De Feo et al. (2022), la perception publique surestime souvent la durabilité du plastique.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>5. Fin de vie — recyclage insuffisant <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Seulement 9% du plastique mondial est recyclé (UNEP, 2020). Le recyclage du PET est en boucle ouverte : une bouteille recyclée devient généralement une fibre textile ou un emballage de moindre qualité, pas une nouvelle bouteille.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>6. Résidu final — milieu marin <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Entre 1 et 2 millions de tonnes de plastique atteignent les océans chaque année (UNEP, 2020). Le plastique non recyclé finit dans des décharges, des incinérateurs, ou directement dans l'environnement.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-plastic); margin-top:2.5rem;">Devenir dans les océans</h3>
+          <div style="max-width:800px; margin:0 auto 2rem;">
+            <p>Le PET est un polymère synthétique : en milieu marin, il se <em>fragmente</em> progressivement sous l'effet des UV et des vagues, mais ne disparaît jamais vraiment. Watt et al. (2021) documentent ce processus de fragmentation jusqu'aux nanoplastiques.</p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:var(--color-plastic);"></div>
+                <div class="deg-time">Jour 1</div>
+                <div class="deg-desc">Bouteille entière à la surface, colonisation par des biofilms</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–5 ans</div>
+                <div class="deg-desc">Fragilisation par les UV, premières fissures, fragments de 5–50 cm</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">5–50 ans</div>
+                <div class="deg-desc">Fragmentation en microplastiques (≤5 mm). Ingestion par la faune marine</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">50–450 ans</div>
+                <div class="deg-desc">Nanoplastiques (≤1 µm), pénétration dans les tissus vivants</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#721c24;"></div>
+                <div class="deg-time">450+ ans</div>
+                <div class="deg-desc">Aucune biodégradation complète — le polymère persiste (Watt et al., 2021)</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2rem auto 0;">
+            <div class="editorial fade-up">
+              <h3>Substances libérées en mer</h3>
+              <p>
+                La fragmentation libère des additifs chimiques dans l'eau de mer : plastifiants, stabilisants UV, colorants.
+                La Chambre des communes du Canada (2019) souligne les risques pour la santé humaine liés à l'ingestion de microplastiques
+                via la chaîne alimentaire marine. Selon Eau Secours, les microplastiques ont été détectés dans le Saint-Laurent
+                et dans les eaux potables canadiennes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════════════ VERRE ══════════════ -->
+        <div class="tab-pane" data-tab="verre">
+
+          <h3 class="impacts-section-title" style="color:var(--color-glass);">Énergie de production &amp; CO₂</h3>
+          <div class="stats-grid" style="margin-bottom:2rem;">
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">7,6 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml</div>
+              <div class="stat-source">Source : De Feo et al., 2022</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">~550 g</div>
+              <div class="stat-label">CO₂ équivalent émis à la production</div>
+              <div class="stat-source">Source : De Feo et al., 2022</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">1 550°C</div>
+              <div class="stat-label">Température de fusion requise</div>
+              <div class="stat-source">Source : De Feo et al., 2022</div>
+            </div>
+            <div class="stat-card glass fade-up">
+              <div class="stat-value">~300 g</div>
+              <div class="stat-label">Poids d'une bouteille en verre 500 ml (15× le PET)</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <p>
+              Le verre est fabriqué à partir de <strong>silice (SiO₂)</strong>, de calcaire et de soude,
+              fondus ensemble à plus de 1 550°C. De Feo et al. (2022) montrent que le verre est
+              le matériau dont l'empreinte à la production est la plus mal perçue par le public —
+              la réalité de sa forte consommation énergétique est souvent sous-estimée.
+              L'ajout de <strong>calcin</strong> (verre recyclé broyé) permet de réduire
+              l'énergie consommée : chaque 10% de calcin réduit la consommation de ~25%.
+            </p>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-glass);">Cycle de vie</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛏️</div>
+              <div class="timeline-content">
+                <h3>1. Extraction — sable &amp; calcaire <span class="badge badge-low">Impact faible</span></h3>
+                <p>Ressources minérales abondantes, mais l'extraction a des impacts locaux sur les écosystèmes (carrières, dragage des fonds sablonneux).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🔥</div>
+              <div class="timeline-content">
+                <h3>2. Fusion &amp; fabrication <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Fusion à 1 550°C dans des fours industriels. Formage par soufflage ou pressage. Énergie requise : 7,6 MJ par bouteille — plus du double du PET (De Feo et al., 2022).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚛</div>
+              <div class="timeline-content">
+                <h3>3. Transport &amp; distribution <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Le verre est 15× plus lourd que le PET pour le même volume, ce qui multiplie considérablement l'empreinte carbone du transport (Tamburini et al., 2021).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🥂</div>
+              <div class="timeline-content">
+                <h3>4. Utilisation <span class="badge badge-low">Impact faible</span></h3>
+                <p>Le verre est inerte chimiquement — aucune migration de substance dans le contenu. En système de consigne, une même bouteille peut être réutilisée <strong>15 à 25 fois</strong>.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>5. Recyclage — boucle fermée <span class="badge badge-low">Impact faible</span></h3>
+                <p>Le verre est recyclable à 100% et à l'infini sans perte de qualité. Le système de consigne québécois élargi en 2023 représente l'option la plus efficace pour le verre.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>6. Résidu final — milieu marin <span class="badge badge-medium">Impact modéré</span></h3>
+                <p>Le verre coule (densité ~2,5 g/cm³) et s'érode en "sea glass". Il ne génère pas de microplastiques ni de substances toxiques, mais persiste pendant des millénaires (De Feo et al., 2022).</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-glass); margin-top:2.5rem;">Devenir dans les océans</h3>
+          <div style="max-width:800px; margin:0 auto 2rem;">
+            <p>Contrairement au plastique, le verre ne génère pas de microplastiques chimiquement dangereux. Il <strong>coule</strong> et s'érode lentement par abrasion sur les fonds sablonneux. Son impact est mécanique plutôt que chimique (Watt et al., 2021).</p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:var(--color-glass);"></div>
+                <div class="deg-time">Jour 1</div>
+                <div class="deg-desc">La bouteille coule rapidement (densité 2,5 g/cm³)</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–10 ans</div>
+                <div class="deg-desc">Abrasion des arêtes sur les fonds marins, formation du "sea glass"</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">100–500 ans</div>
+                <div class="deg-desc">Érosion progressive des fragments, accumulation sur les fonds</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">500–4 000 ans</div>
+                <div class="deg-desc">Dissolution très lente en milieu aqueux</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#1a5c2a;"></div>
+                <div class="deg-time">~4 000 ans</div>
+                <div class="deg-desc">Dissolution complète — aucune toxicité chimique libérée</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2rem auto 0;">
+            <div class="editorial fade-up">
+              <h3>Avantage relatif du verre en milieu marin</h3>
+              <p>
+                Le verre, bien que persistant très longtemps, ne génère pas de microplastiques
+                ni de substances chimiques dangereuses. Son principal risque est mécanique :
+                les fragments peuvent blesser la faune marine. Il ne s'accumule pas dans la chaîne alimentaire
+                comme le font les microplastiques issus du PET (Watt et al., 2021 ; Chambre des communes du Canada, 2019).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══════════════ ALUMINIUM ══════════════ -->
+        <div class="tab-pane" data-tab="alu">
+
+          <h3 class="impacts-section-title" style="color:var(--color-alu);">Énergie de production &amp; CO₂</h3>
+          <div class="stats-grid" style="margin-bottom:2rem;">
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">~14 MJ</div>
+              <div class="stat-label">Énergie de production par bouteille 500 ml (aluminium vierge)</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">~600 g</div>
+              <div class="stat-label">CO₂ équivalent émis à la production (vierge)</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">95%</div>
+              <div class="stat-label">Économie d'énergie avec l'aluminium recyclé vs vierge</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+            <div class="stat-card alu fade-up">
+              <div class="stat-value">~15 g</div>
+              <div class="stat-label">Poids d'une bouteille aluminium 500 ml</div>
+              <div class="stat-source">Source : Tamburini et al., 2021</div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:0 auto 2.5rem;">
+            <p>
+              L'aluminium est obtenu à partir de la <strong>bauxite</strong> via deux étapes majeures :
+              le <strong>procédé Bayer</strong> (extraction de l'alumine) et l'<strong>électrolyse Hall-Héroult</strong>
+              (réduction en aluminium pur, ~15 kWh/kg). L'aluminium vierge est le plus énergivore des trois matériaux.
+              Toutefois, Tamburini et al. (2021) démontrent que la bouteille en aluminium réutilisable
+              présente le <strong>meilleur bilan global sur la durée de vie</strong> lorsqu'elle est réutilisée
+              plusieurs fois et recyclée en fin de vie.
+            </p>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-alu);">Cycle de vie</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⛏️</div>
+              <div class="timeline-content">
+                <h3>1. Extraction de la bauxite <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Mines à ciel ouvert principalement en Guinée, Brésil et Australie. L'extraction déforeste et perturbe les écosystèmes locaux. Il faut 4 à 5 kg de bauxite par kg d'aluminium.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">⚡</div>
+              <div class="timeline-content">
+                <h3>2. Raffinage &amp; électrolyse <span class="badge badge-high">Impact élevé</span></h3>
+                <p>Procédé Bayer + électrolyse Hall-Héroult : ~14 MJ et ~600 g CO₂eq par bouteille. L'empreinte carbone dépend fortement de la source d'électricité — charbon (Chine) vs hydroélectricité (Canada, Islande) (Tamburini et al., 2021).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🏭</div>
+              <div class="timeline-content">
+                <h3>3. Formage &amp; fabrication <span class="badge badge-medium">Impact modéré</span></h3>
+                <p>Laminage, emboutissage ou filage. Un revêtement interne en résine époxy (possible BPA) est appliqué pour prévenir la corrosion par les boissons acides (De Feo et al., 2022).</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🚢</div>
+              <div class="timeline-content">
+                <h3>4. Transport &amp; distribution <span class="badge badge-low">Impact faible</span></h3>
+                <p>~15 g par bouteille : plus léger que le verre (300 g), légèrement plus lourd que le PET (20 g). Minimise les émissions logistiques.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">♻️</div>
+              <div class="timeline-content">
+                <h3>5. Recyclage — boucle fermée à 95% <span class="badge badge-low">Impact faible</span></h3>
+                <p>L'aluminium recyclé nécessite 95% moins d'énergie que le vierge. Recyclable à l'infini sans perte de qualité. Tamburini et al. (2021) confirment que c'est le point fort majeur de ce matériau.</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="timeline-icon">🌊</div>
+              <div class="timeline-content">
+                <h3>6. Résidu final — milieu marin <span class="badge badge-medium">Impact modéré</span></h3>
+                <p>En eau salée, l'aluminium s'oxyde (couche Al₂O₃) et subit une corrosion galvanique. Le revêtement époxy peut libérer des composés organiques (BPA potentiel). Durée de dégradation : 80 à 500 ans (Watt et al., 2021).</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="impacts-section-title" style="color:var(--color-alu); margin-top:2.5rem;">Devenir dans les océans</h3>
+          <div style="max-width:800px; margin:0 auto 2rem;">
+            <p>L'aluminium se corrode progressivement en eau salée. Contrairement au plastique, il ne génère pas de microplastiques. Mais son revêtement époxy interne peut libérer des perturbateurs endocriniens (Watt et al., 2021 ; Chambre des communes du Canada, 2019).</p>
+          </div>
+          <div class="degradation-timeline">
+            <div class="deg-track">
+              <div class="deg-point">
+                <div class="deg-dot" style="background:var(--color-alu);"></div>
+                <div class="deg-time">Jours 1–30</div>
+                <div class="deg-desc">Formation d'une couche d'oxyde Al₂O₃ protectrice en surface</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">1–10 ans</div>
+                <div class="deg-desc">Corrosion galvanique, piqûres en surface, libération possible du revêtement époxy</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">10–80 ans</div>
+                <div class="deg-desc">Désintégration partielle, fragmentation en éclats métalliques</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot"></div>
+                <div class="deg-time">80–500 ans</div>
+                <div class="deg-desc">Dissolution sous forme d'ions Al³⁺</div>
+              </div>
+              <div class="deg-point">
+                <div class="deg-dot" style="background:#1a5c2a;"></div>
+                <div class="deg-time">~500 ans</div>
+                <div class="deg-desc">Dissolution totale du métal — mais le revêtement époxy peut persister</div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:800px; margin:2rem auto 0;">
+            <div class="editorial fade-up">
+              <h3>Le problème du revêtement époxy &amp; justice environnementale</h3>
+              <p>
+                La plupart des contenants en aluminium possèdent un revêtement interne en résine époxy
+                pouvant contenir du <strong>bisphénol A (BPA)</strong>. En milieu marin, la corrosion
+                peut libérer ces composés dans l'eau. Jacobs (2025) souligne que les communautés
+                autochtones côtières, déjà exposées à la pollution plastique et dépourvues d'accès
+                fiable à l'eau potable, sont particulièrement vulnérables à ces contaminations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tabs -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Pages</h3>
+        <a href="index.html">Accueil</a>
+        <a href="comparaison.html">Comparaison</a>
+        <a href="solutions.html">Solutions &amp; Sources</a>
+      </div>
+      <div>
+        <h3>Sources académiques</h3>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0013935121002681" target="_blank" rel="noopener">Tamburini et al., 2021</a>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9034135/" target="_blank" rel="noopener">Watt et al., 2021</a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959652621043237" target="_blank" rel="noopener">De Feo et al., 2022</a>
+        <a href="https://www.lifecycleinitiative.org/wp-content/uploads/2020/07/UNEP_PLASTIC-BOTTLES-REPORT_29-JUNE-2020_final-low-res.pdf" target="_blank" rel="noopener">UNEP / Life Cycle Initiative, 2020</a>
+      </div>
+      <div>
+        <h3>Sources locales</h3>
+        <a href="https://www.noscommunes.ca/documentviewer/fr/42-1/ENVI/rapport-21/page-42" target="_blank" rel="noopener">Chambre des communes, 2019</a>
+        <a href="https://doi.org/10.1017/plc.2024.26" target="_blank" rel="noopener">Jacobs, 2025</a>
+        <a href="https://eausecours.org/enjeux/microplastiques" target="_blank" rel="noopener">Eau Secours</a>
+      </div>
+      <div class="footer-enquete">
+        Question d'enquête : "En quoi le cycle de vie des bouteilles en aluminium, en verre et en plastique met-il de l'avant les problèmes liés à l'exploitation des ressources naturelles, à la gestion des déchets et à la pollution marine?"
+      </div>
+      <div class="footer-copy">HOR-1200 — Horizon : Risques et défis du XXIe siècle — Université de Montréal — 2026.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+  (function () {
+    const hash = location.hash.replace('#', '');
+    if (hash && ['pet', 'verre', 'alu'].includes(hash)) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      const btn  = document.querySelector('.tab-btn[data-tab="' + hash + '"]');
+      const pane = document.querySelector('.tab-pane[data-tab="' + hash + '"]');
+      if (btn)  btn.classList.add('active');
+      if (pane) pane.classList.add('active');
+    }
+  })();
+  </script>
+</body>
+</html>
